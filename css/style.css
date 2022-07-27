@@ -1,0 +1,281 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #fb6f75;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    overflow: hidden;
+    /* Hide scrollbars */
+}
+
+/*  Small  */
+@media(min-width:768px) {
+    .interface {
+        width: 100%;
+    }
+}
+
+/*   Medium   */
+@media(min-width:992px) {
+    .interface {
+        width: 100%;
+    }
+}
+
+/*  Large   */
+@media(min-width:1200px) {
+    .interface {
+        width: 100%;
+    }
+}
+
+.interface .container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    overflow: hidden;
+}
+
+.interface .container .image img {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+}
+
+.photo-text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 450px;
+    bottom: 100px;
+    z-index: 2;
+}
+
+.image .overlay {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    background-color: #dedcdd;
+    bottom: 140px;
+    left: 750px;
+    opacity: 0.3;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.image p {
+    color: rgb(250, 250, 250) !important;
+    font-size: 26px;
+    font-weight: 700;
+    width: 140px;
+    position: absolute;
+    bottom: 140px;
+    left: 750px;
+    padding-top: 5px;
+    padding-left: 15px;
+    line-height: 1.1;
+}
+
+.interface .container .form-template {
+    padding-top: 60px;
+    padding-left: 100px;
+}
+
+.interface .container .form-template a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.interface .container .form-template .text {
+    line-height: 0.6;
+}
+
+.interface .container .form-template .text h1 {
+    font-size: 36px;
+}
+
+.interface .container .form-template .text p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.interface .container .form-template input {
+    border: none;
+}
+
+.interface .container .form-template input {
+    outline: none;
+}
+
+.interface .container .form-template .phone {
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 30px;
+    /* margin-bottom: 5px; */
+    width: 70%;
+    background-color: white;
+    border: solid 2px #eeeeee;
+    border-radius: 15px;
+}
+
+.interface .container .form-template .phone:focus {
+    border: 1px solid var(--main-color);
+}
+
+.interface .container .form-template .phone label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.interface .container .form-template .Password {
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: -25px;
+    width: 70%;
+    background-color: white;
+    border: solid 2px #eeeeee;
+    border-radius: 15px;
+
+}
+
+.interface .container .form-template .Password:focus {
+    border: 1px solid var(--main-color);
+}
+
+
+/* .interface .container .form-template .Password:visited {
+    border: 2px solid var(--main-color);
+} */
+
+.interface .container .form-template .Password label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.interface .container .form-template button {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    display: block;
+    width: 70%;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-top: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: var(--main-color);
+    border-radius: 15px;
+    border: #fb6f75;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px 5px #feced1;
+}
+
+.interface .container .form-template .login-choices p {
+    display: inline;
+    font-weight: 500;
+    text-align: center;
+    padding-left: 50px;
+}
+
+.interface .container .form-template .login-choices p::before {
+    content: "";
+    display: inline-block;
+    width: 90px;
+    height: 2px;
+    background: #eeeeee;
+    /* left: 0; */
+}
+
+.interface .container .form-template .login-choices ::after {
+    content: "";
+    display: inline-block;
+    width: 90px;
+    height: 2px;
+    background: #eeeeee;
+    /* left: 0; */
+}
+
+.interface .container .form-template .social-icons {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.interface .container .form-template .social-icons .mac {
+    display: inline-block;
+    align-items: center;
+    background-color: white;
+    border: solid 1px #eeeeee;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.interface .container .form-template .social-icons .mac i {
+    font-size: 25px;
+}
+
+.interface .container .form-template .social-icons .google {
+    display: inline-block;
+    align-items: center;
+    background-color: white;
+    border: solid 1px #eeeeee;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.interface .container .form-template .social-icons .facebook {
+    display: inline-block;
+    align-items: center;
+    background-color: white;
+    border: solid 1px #eeeeee;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.signup {
+    font-weight: 500;
+    padding-left: 60px;
+    padding-top: 15px;
+}
+
+.footer {
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 80px;
+    padding-top: 45px;
+}
